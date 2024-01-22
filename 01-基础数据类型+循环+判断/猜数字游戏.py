@@ -1,4 +1,4 @@
-# ！因为不是在linux上写python就解释器了
+# ！因为不是在linux上写python就没有解释器了
 
 import random
 
