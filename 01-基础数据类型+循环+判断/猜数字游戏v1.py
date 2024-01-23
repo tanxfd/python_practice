@@ -15,6 +15,6 @@ while i == 1:
         print("小了")
     elif int(num) > n1:
         print("大了")
-    else:print("输入有错误，请重试")
 
 print("猜对了，游戏结束")
+
