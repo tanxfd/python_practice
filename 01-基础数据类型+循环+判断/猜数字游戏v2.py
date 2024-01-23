@@ -3,10 +3,11 @@ import random
 print("游戏开始！")
 print("初始金币:5000")
 g = 5000
+turn = 1
 
-while g > 0:
+while turn >= 1:
     n1 = random.randint(0, 1000)
-    while 1 == 1:
+    if g >= 0:
         num = input("请输入一个数字:")
         if num.isdigit():
             print("你输入的是:", num)
@@ -24,5 +25,7 @@ while g > 0:
                 print("当前金额为", g)
         else:
             print("输入有误，请重新输入")
+    else:
+        break
 
 print("金额不足，游戏结束")
