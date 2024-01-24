@@ -5,6 +5,8 @@ list_yanfa = ['小黄', '小李', '小王', '小杨', '小周']
 list_shichang = ['小杨', '小张', '小吴', '小冯', '小周']
 set_company = set()
 
+
+# (1)求部门员工总共有多少人
 def sum_emp(list1, list2, list3):
     for item in list1:
         set_company.add(item)
@@ -15,5 +17,6 @@ def sum_emp(list1, list2, list3):
     return len(set_company)
 
 
+# (1)求部门员工总共有多少人
 print(sum_emp(list_ceshi, list_yanfa, list_shichang))
 
