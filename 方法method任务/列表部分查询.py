@@ -9,3 +9,4 @@ def get_data(lst, num):
 
 my_list = [215, 875, 415, 127]
 print(get_data(my_list, -5))
+
