@@ -1,26 +1,24 @@
 import random
 import time
 
-# 先创建购物清单    #跟优惠券数量一样吧
+#先创建购物清单    #跟优惠券数量一样吧
 
 shop_list = [['电视', 2000], ['电脑', 5000], ['冰箱', 1000], ['外套', 1600], ['挎包', 500],
              ['T恤', 90], ['小型工艺品', 50], ['戒指', 3000], ['空调', 1500], ['手机', 6000]]
 
-# 优惠券的列表     #要求必须有10种
+#优惠券的列表     #要求必须有10种
 discount_list = [['电视', 1500], ['电脑', 4500], ['冰箱', 800], ['外套', 1140], ['挎包', 450],
-                 ['T恤', 45], ['小型工艺品', 40], ['戒指', 2100], ['空调', 1200], ['手机', 4800]]
+             ['T恤', 45], ['小型工艺品', 40], ['戒指', 2100], ['空调', 1200], ['手机', 4800]]
 
-# 购物商品清单，程序开始时为空集
+#购物商品清单，程序开始时为空集
 cart_list: list[str] = []
 
 rand = random.randint(0, 9)
 
-
-# 抽到哪张购物券就把优惠后的价格替换到原来的购物清单里
+#抽到哪张购物券就把优惠后的价格替换到原来的购物清单里
 def __discount__(shop_list, discount_list, rand):
     shop_list[rand] = discount_list[rand]
     return shop_list
-
 
 print("购物系统启动")
 
@@ -40,7 +38,7 @@ card_money = input("你带了多少钱？")
 shop_money = 0
 shop_count = 0
 start_time = time.perf_counter()
-while True:  # 购物开始
+while True:         #购物开始
     print("你想要买点什么？")
     print(card_money)
     goods1 = input()
