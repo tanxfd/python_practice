@@ -13,3 +13,4 @@ print(set)
 #在两个或者两个以上部门的人
 set_company = set_ceshi.union(set_yanfa).union(set_shichang)
 print(set_company.difference(set))
+
