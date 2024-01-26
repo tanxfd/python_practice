@@ -133,24 +133,5 @@ account_user = {}
 
 # 创建一个用户实例并设置其属性
 new_user = User()
-# new_user.generate_id()
-# new_user.set_client_degree()
-# new_user.set_name()
-# new_user.set_passwd()
-# new_user.set_locate()
-# new_user.set_credit_bank()
-#
-# # 将用户信息添加到account_user字典中
-# user_info = [
-#     new_user.get_name(),
-#     new_user.passwd,
-#     new_user.locate,
-#     new_user.cardMoney,  # 注意：这里cardMoney还没有设置值
-#     new_user.clientDegree,
-#     new_user._creditBank  # 可以直接访问，但通常我们会通过getter方法获取
-# ]
-# account_user[new_user.get_id()] = user_info
-#
-#
-# # 打印account_user字典以验证内容
-# # print(account_user)
+
+
