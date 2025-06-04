@@ -39,7 +39,7 @@ class MyTestCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 
-
+'''runner test测试函数'''
 def runner_test():
     test = unittest.defaultTestLoader.discover(r"D:\python_program\计算器测试", pattern="calculate_test1.py")
     # 创建运行器
@@ -55,7 +55,7 @@ def runner_test():
 
 runner_test()
 
-
+'''发送邮件函数'''
 def email():
     smtp_server = 'smtp.qq.com'
     smtp_pass = 'lpuygenbzpusbbfj'

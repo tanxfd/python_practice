@@ -1,5 +1,5 @@
-
 import random
+
 
 # 在当前文件定义locate类
 class locate:
@@ -37,9 +37,7 @@ class locate:
     #     locate.house = self.house
 
 
-
-
-#这是User类
+# 这是User类
 class User:
     id = ''
     clientDegree = 0
@@ -92,9 +90,9 @@ class User:
                 print("请重新输入一个六位数密码")
 
     def set_locate(self):
-        user_locate = locate
-        str_locate = user_locate.get_country(locate) + user_locate.get_province(locate) + \
-                     user_locate.get_street(locate) + user_locate.get_house(locate)
+        user_locate = locate()
+        str_locate = user_locate.get_country() + user_locate.get_province() + \
+                     user_locate.get_street() + user_locate.get_house()
         self.locate = str_locate
 
     def set_credit_bank(self):
@@ -133,6 +131,3 @@ account_user = {}
 
 # 创建一个用户实例并设置其属性
 new_user = User()
-
-
-

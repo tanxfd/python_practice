@@ -37,7 +37,6 @@ def update_or_delete(i):
         elif i == 3:
             fm_record.record.fid = str(int_record_id)
             del fm_record.Record_dict[fm_record.record.fid]
-        write_file()
     else:
         print("输入的ID超过了账单的条目，当前ID最大值为", fm_record.Record_num)
 
